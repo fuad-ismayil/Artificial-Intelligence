@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 .open-sans-thin,
 .open-sans-mid,
@@ -25,86 +21,64 @@
     font-weight: 800;
 }
 .mobile-menyu {
-    /* top left bottom right */
-    /* fixed absolute */
-    /* valideyne fixed relative , usaga verilir absolute */
-        position: fixed;
-        background-color: #222;
-        opacity: .9;
-        top: 80px;
-      
-       
-       width: 70%;
-       transform: translateX(20%);
-       height: 50vh;
-    
-    }
-    
-    
-    .mobile-menyu .mobile-nav-links {
-        display: flex;
-        /* flex-direction: row; */
+    display: none;
+    position: fixed;
+    background-color: #222;
+    opacity: .9;
+    top: 80px;       
+    width: 70%;
+    height: 50vh;
+}    
+.mobile-menyu .mobile-nav-links {
+        display: none;
         flex-direction: column;
         justify-content: center;
         height: 100%;
-        align-items: center;
-       
-    
-    }
-    
+        align-items: center;      
+}    
     /* Group selectors w3schools.com */
-    
-    .mobile-menyu .mobile-nav-links a{
+.mobile-menyu .mobile-nav-links a{
         color:#ccc;
         text-decoration: none;
         font-size: 17px;
 }
-    
-    
-    /* pseudo classlar */
-    
-    .mobile-nav-links a{
+/* pseudo classlar */
+.mobile-nav-links a{
         position: relative;
         margin-bottom: 20px;
-    }
-    
- 
-    
-    
-    .mobile-menyu .fa-xmark {
-       position: relative;
-       left: 240px;
-       top: -20px;
-    
-    
-    }
+}        
+.mobile-menyu .fa-xmark {
+        position: relative;
+        left: 240px;
+        top: -20px;
+}
+.container {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    background: linear-gradient(to bottom, #0A101B, #0B1320);
+    padding: 15px 20px;
+    width: 100%;
 }
-
 header nav,
 header button {
     display: none;
 }
-
 header nav {
     gap: 40px;
 }
-
 header nav a {
     text-decoration: none;
 }
-
 header nav a,
 .fa-bars {
     color: #fff;
-}
-
-.container {
-    padding: 15px 20px;
-    background: linear-gradient(to bottom, #0A101B, #0B1320);
 }
 
 @media (min-width: 768px) {
@@ -139,14 +113,13 @@ header nav a,
         justify-content: center;
     }
 
-    .container {
-        padding: 20px 30px;
+    header{
+        width: 100%;
     }
 }
 @media (max-width: 767px){
     .container{
         position: fixed;
-        width: 100%;
     }
 }
 
