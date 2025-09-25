@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-
-
+/* used fonts start */
 .open-sans-thin,
 .open-sans-mid,
 .open-sans-bold {
@@ -14,85 +13,165 @@
 .open-sans-thin {
     font-weight: 600;
 }
+
 .open-sans-mid {
     font-weight: 700;
 }
+
 .open-sans-bold {
     font-weight: 800;
 }
-.mobile-menyu {
+/* used fonts end */
+
+/* mobile menu start */
+.mobile-menu {
     display: none;
     position: fixed;
     background-color: #222;
     opacity: .9;
-    top: 80px;       
+    top: 80px;
     width: 70%;
     height: 50vh;
-}    
-.mobile-menyu .mobile-nav-links {
-        display: none;
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
-        align-items: center;      
-}    
-    /* Group selectors w3schools.com */
-.mobile-menyu .mobile-nav-links a{
-        color:#ccc;
-        text-decoration: none;
-        font-size: 17px;
 }
+
+.mobile-menu .mobile-nav-links {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+/* Group selectors w3schools.com */
+.mobile-menu .mobile-nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 17px;
+}
+
 /* pseudo classlar */
-.mobile-nav-links a{
-        position: relative;
-        margin-bottom: 20px;
-}        
-.mobile-menyu .fa-xmark {
-        position: relative;
-        left: 240px;
-        top: -20px;
+.mobile-nav-links a {
+    position: relative;
+    margin-bottom: 20px;
 }
+
+.mobile-menu .fa-xmark {
+    position: relative;
+    left: 240px;
+    top: -20px;
+}
+/* mobile menu end */
 .container {
+    
     max-width: 100%;
     padding-left: 0;
     padding-right: 0;
-  }
-  
+}
+/* header start */
 header {
     display: flex;
-    justify-content: space-around;
+    position: fixed;
+    justify-content: space-between;
     align-items: center;
     background: linear-gradient(to bottom, #0A101B, #0B1320);
-    padding: 15px 20px;
-    width: 100%;
+    padding: 10px 10px;
+
+    min-width: 100%;
 }
+
 header nav,
 header button {
     display: none;
 }
+
 header nav {
-    gap: 40px;
+    gap: 20px;
 }
+
 header nav a {
     text-decoration: none;
-}
-header nav a,
-.fa-bars {
     color: #fff;
 }
 
-@media (min-width: 768px) {
+header img {
+    width: 200px;
+
+}
+/* header end */
+
+/* introduction start */
+.introduction .intro-left h6 {
+    font-size: 15px;
+    color: #3A68B8;
+    padding: 10px 0;
+
+}
+
+.introduction .intro-left h1 {
+    font-size: 27px;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.introduction .intro-left p {
+    color: #B4B7BB;
+    padding: 10px 0;
+}
+
+section.introduction {
+    background: linear-gradient(to bottom, #08101D, #09111F);
+    padding: 25px 15px;
+    padding-top: 70px;
+}
+
+.introduction .intro-right img {
+    width: 100%;
+    padding-top: 30px;
+}
+
+.intro-buttons .get-started, .watch-video {
+    border: none;
+    border-radius: 5px;
+    background: #3A68B8;
+    width: 50%;
+    height: 50px;
+
+}
+
+.intro-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.brends-logos{
+display: flex;
+flex-direction: column;
+align-items: center;
+background: #09111F;
+padding: 20px;
+gap: 40px;
+
+}
+.brends-logos > img{
+    width: 50%;
+    
+}
+/* introduction end */
+@media (min-width: 768px) and (max-width:1279px) {
+
     header nav,
     header button {
         display: flex;
     }
-    .mobile-menyu {
+
+    .mobile-menu {
         display: none;
     }
-    .mobile-menyu .mobile-nav-links{
+
+    .mobile-menu .mobile-nav-links {
         display: none;
     }
-    
+
     header .fa-bars {
         display: none;
     }
@@ -103,7 +182,7 @@ header nav a,
     }
 
     header button {
-        width: 122px;
+        width: 15%;
         height: 52px;
         color: #fff;
         background: #3A68B8;
@@ -111,26 +190,115 @@ header nav a,
         border-radius: 5px;
         align-items: center;
         justify-content: center;
+
     }
 
-    header{
+    header {
         width: 100%;
+        padding: 10px 50px;
+        position: static;
     }
-}
-@media (max-width: 767px){
-    .container{
-        position: fixed;
+
+    section.introduction {
+        display: flex;
+        align-items: center;
+        padding: 60px 50px;
     }
+
+    .intro-buttons .get-started,
+    .watch-video {
+        width: 35%;
+    }
+
+    .intro-buttons {
+        display: flex;
+        justify-content: flex-start;
+
+    }
+    .brends-logos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 50px; 
+        padding: 25px 50px;
+        width: 75%;
+    }
+    .brends-logos  img{
+        flex: 1 1 15%;        /* Her resim genişliği yaklaşık %45 olsun */
+        width: 100%;      /* Taşmayı önle */
+        height: auto; 
+        justify-content: center;
+        align-items: center;        /* Oranları koru */
+    }
+    
 }
 
-@media (max-width: 374px) {
-    header .fa-bars {
+@media(min-width:1280px) {
+
+    header nav,
+    header button {
         display: flex;
     }
-    
-    
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu .mobile-nav-links {
+        display: none;
+    }
+
+    header .fa-bars {
+        display: none;
+    }
+
     header img {
-        width: 142px;
-        height: 28px;
+        width: 189px;
+        height: 38px;
+    }
+
+    header button {
+        width: 10%;
+        height: 52px;
+        color: #fff;
+        background: #3A68B8;
+        border: none;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    header {
+        width: 100%;
+        padding: 10px 200px;
+    }
+
+    section.introduction {
+        display: flex;
+        align-items: center;
+        padding: 60px 200px;
+    }
+
+    .intro-buttons .get-started,
+    .watch-video {
+        width: 20%;
+    }
+
+    .intro-buttons {
+        display: flex;
+        justify-content: flex-start;
+
+    }
+    .brends-logos{
+        display: flex;
+        flex-direction: row;
+        gap: 70px; 
+        padding: 25px ; 
+        justify-content: center;
+        align-items: center; 
+    }
+    .brends-logos  img{
+        width: 10%; 
     }
 }
