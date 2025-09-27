@@ -205,7 +205,8 @@ section.awards {
     padding: 25px 40px;
     background: #020A18;
 }
-section.awards .awards-cards{
+
+section.awards .awards-cards {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -219,39 +220,46 @@ section.awards .awards-cards .kart {
     background: linear-gradient(to bottom, #0C1421, #19202D);
     border-radius: 10px;
     gap: 10px;
-    
+
 }
 
-section.awards .awards-cards .kart>h4, article {
+section.awards .awards-cards .kart>h4,
+article {
     color: #B8BABE;
 }
 
 
 img.a-dots {
     position: absolute;
-    bottom:0;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    width: 50px;
 }
+
 /* Awards end */
 
 /* Reviews start */
 
-section.reviews{
+section.reviews {
     padding: 25px 15px;
     background: #020A18;
 }
-.rev-left>p{
+
+.rev-left>p {
     color: #B3B5B9;
-    
+
 }
+
 .rev-right>img {
     width: 100%;
     padding: 30px 0;
 }
-.rev-left>h1{
+
+.rev-left>h1 {
     padding: 20px 0;
 }
+
 /* Reviews end */
 
 @media (min-width: 768px) and (max-width:1279px) {
@@ -293,7 +301,6 @@ section.reviews{
     header {
         width: 100%;
         padding: 10px 50px;
-        position: static;
     }
 
     section.introduction {
@@ -332,27 +339,13 @@ section.reviews{
         display: flex;
         align-items: center;
         padding: 30px 50px;
-        background: #020A18;
         gap: 50px;
     }
 
-    .learnmore .lm-left img {
-        width: 100%;
-        padding: 30px 0;
-    }
 
-    .learnmore .lm-right p {
-        color: #B3B5B9;
-        padding: 10px 0;
-    }
 
     .learnmore .learn-more {
-        border: none;
-        border-radius: 5px;
-        background: #3A68B8;
         width: 35%;
-        height: 50px;
-
     }
 
     .lm-right h1 {
@@ -377,7 +370,7 @@ section.reviews{
     }
 
     .kart>article {
-        
+
         font-size: 17px;
     }
 
@@ -385,6 +378,16 @@ section.reviews{
         padding: 30px;
     }
 
+    section.reviews {
+        display: flex;
+        align-items: center;
+        padding: 30px 50px;
+        gap: 50px;
+    }
+
+    .rev-left>p {
+        padding: 5px 0;
+    }
 }
 
 @media(min-width:1280px) {
@@ -434,6 +437,12 @@ section.reviews{
         padding: 60px 200px;
 
     }
+    .intro-left{
+        min-width: 50%;
+    }
+    .intro-right{
+        min-width: 50%;
+    }
 
     .intro-buttons .get-started,
     .watch-video {
@@ -476,7 +485,12 @@ section.reviews{
         color: #B3B5B9;
         padding: 10px 0;
     }
-
+    .lm-left{
+        min-width: 50%;
+    }
+    .lm-right{
+        min-width: 50%;
+    }
     .learnmore .learn-more {
         border: none;
         border-radius: 5px;
@@ -502,7 +516,8 @@ section.reviews{
         flex-wrap: wrap;
         justify-content: center;
     }
-    .kart> h4{
+
+    .kart>h4 {
         font-size: 17px;
     }
 
@@ -511,9 +526,30 @@ section.reviews{
     }
 
     .kart>article {
-        
+
         font-size: 13px;
     }
 
-    
+    section.reviews {
+        display: flex;
+        align-items: center;
+        padding: 30px 200px;
+        gap: 5px;
+    }
+
+    .rev-left>h1{
+        font-size: 30px;
+    }
+
+    .rev-left>p {
+        padding: 5px 0;
+        font-size: 13px;
+    }
+    .rev-left{
+        min-width: 50%;
+    }
+    .rev-right{
+        min-width: 50%;
+    }
+
 }
