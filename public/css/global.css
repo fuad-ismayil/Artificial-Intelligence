@@ -21,6 +21,7 @@
 .open-sans-bold {
     font-weight: 800;
 }
+
 /* used fonts end */
 
 /* mobile menu start */
@@ -60,13 +61,15 @@
     left: 240px;
     top: -20px;
 }
+
 /* mobile menu end */
 .container {
-    
+
     max-width: 100%;
     padding-left: 0;
     padding-right: 0;
 }
+
 /* header start */
 header {
     display: flex;
@@ -75,7 +78,7 @@ header {
     align-items: center;
     background: linear-gradient(to bottom, #0A101B, #0B1320);
     padding: 10px 10px;
-
+    z-index: 1;
     min-width: 100%;
 }
 
@@ -97,6 +100,7 @@ header img {
     width: 200px;
 
 }
+
 /* header end */
 
 /* introduction start */
@@ -129,7 +133,8 @@ section.introduction {
     padding-top: 30px;
 }
 
-.intro-buttons .get-started, .watch-video {
+.intro-buttons .get-started,
+.watch-video {
     border: none;
     border-radius: 5px;
     background: #3A68B8;
@@ -143,50 +148,111 @@ section.introduction {
     justify-content: center;
     gap: 20px;
 }
+
 /* introduction end */
 
 /* brends start */
-.brends-logos{
-display: flex;
-flex-direction: column;
-align-items: center;
-background: #09111F;
-padding: 20px;
-gap: 40px;
+.brends-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #09111F;
+    padding: 20px;
+    gap: 40px;
 
 }
-.brends-logos > img{
+
+.brends-logos>img {
     width: 50%;
 }
+
 /* brends end */
 
 /* learn more start */
 
-section.learnmore{
+section.learnmore {
     padding: 25px 15px;
     background: #020A18;
 }
-.learnmore .lm-left img{
+
+.learnmore .lm-left img {
     width: 100%;
     padding: 30px 0;
 }
-.learnmore .lm-right p{
+
+.learnmore .lm-right p {
     color: #B3B5B9;
     padding: 10px 0;
 }
-.learnmore .learn-more{
+
+.learnmore .learn-more {
     border: none;
     border-radius: 5px;
     background: #3A68B8;
     width: 40%;
     height: 50px;
 }
-.lm-right h1{
+
+.lm-right h1 {
     font-size: 24px;
 }
 
 /* learn more end */
 
+/* Awards start */
+section.awards {
+    position: relative;
+    padding: 25px 40px;
+    background: #020A18;
+}
+section.awards .awards-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section.awards .awards-cards .kart {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #0C1421, #19202D);
+    border-radius: 10px;
+    gap: 10px;
+    
+}
+
+section.awards .awards-cards .kart>h4, article {
+    color: #B8BABE;
+}
+
+
+img.a-dots {
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* Awards end */
+
+/* Reviews start */
+
+section.reviews{
+    padding: 25px 15px;
+    background: #020A18;
+}
+.rev-left>p{
+    color: #B3B5B9;
+    
+}
+.rev-right>img {
+    width: 100%;
+    padding: 30px 0;
+}
+.rev-left>h1{
+    padding: 20px 0;
+}
+/* Reviews end */
 
 @media (min-width: 768px) and (max-width:1279px) {
 
@@ -246,35 +312,41 @@ section.learnmore{
         justify-content: flex-start;
 
     }
-    .brends-logos{
+
+    .brends-logos {
         display: flex;
         flex-direction: row;
-        gap: 70px; 
-        padding: 25px ; 
+        gap: 70px;
+        padding: 25px;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
         flex-wrap: wrap;
     }
-    .brends-logos  img{
+
+    .brends-logos img {
         padding: 7px;
-        width: 30%; 
+        width: 30%;
     }
-    section.learnmore{
+
+    section.learnmore {
         display: flex;
         align-items: center;
         padding: 30px 50px;
         background: #020A18;
         gap: 50px;
     }
-    .learnmore .lm-left img{
+
+    .learnmore .lm-left img {
         width: 100%;
         padding: 30px 0;
     }
-    .learnmore .lm-right p{
+
+    .learnmore .lm-right p {
         color: #B3B5B9;
         padding: 10px 0;
     }
-    .learnmore .learn-more{
+
+    .learnmore .learn-more {
         border: none;
         border-radius: 5px;
         background: #3A68B8;
@@ -282,11 +354,37 @@ section.learnmore{
         height: 50px;
 
     }
-    .lm-right h1{
+
+    .lm-right h1 {
         font-size: 30px;
     }
-    
-    
+
+    section.awards {
+        padding: 30px 50px;
+        justify-content: center;
+    }
+
+    section.awards .awards-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .kart {
+        max-width: 46%;
+    }
+
+    .kart>article {
+        
+        font-size: 17px;
+    }
+
+    .kart>img {
+        padding: 30px;
+    }
+
 }
 
 @media(min-width:1280px) {
@@ -347,33 +445,39 @@ section.learnmore{
         justify-content: flex-start;
 
     }
-    .brends-logos{
+
+    .brends-logos {
         display: flex;
         flex-direction: row;
-        gap: 70px; 
-        padding: 70px 25px ; 
+        gap: 70px;
+        padding: 70px 25px;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
     }
-    .brends-logos  img{
-        width: 10%; 
+
+    .brends-logos img {
+        width: 10%;
     }
-    section.learnmore{
+
+    section.learnmore {
         display: flex;
         align-items: center;
         padding: 30px 200px;
         background: #020A18;
         gap: 70px;
     }
-    .learnmore .lm-left img{
+
+    .learnmore .lm-left img {
         width: 100%;
         padding: 30px 0;
     }
-    .learnmore .lm-right p{
+
+    .learnmore .lm-right p {
         color: #B3B5B9;
         padding: 10px 0;
     }
-    .learnmore .learn-more{
+
+    .learnmore .learn-more {
         border: none;
         border-radius: 5px;
         background: #3A68B8;
@@ -381,7 +485,35 @@ section.learnmore{
         height: 50px;
 
     }
-    .lm-right h1{
+
+    .lm-right h1 {
         font-size: 30px;
     }
+
+    section.awards {
+        padding: 30px 50px;
+        justify-content: center;
+    }
+
+    section.awards .awards-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .kart> h4{
+        font-size: 17px;
+    }
+
+    .kart {
+        max-width: 20%;
+    }
+
+    .kart>article {
+        
+        font-size: 13px;
+    }
+
+    
 }
