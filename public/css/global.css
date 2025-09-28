@@ -254,6 +254,45 @@ section.reviews{
 }
 /* Reviews end */
 
+
+footer {
+    background: linear-gradient(to bottom, #0A101B, #0B1320);
+
+}
+
+footer .footer-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-nav a {
+    text-decoration: none;
+    color:#ccc;
+}
+
+.footerin-orta-hisse h4, .footerin-sag-terefi h4 {
+    margin-bottom: 32px;
+}
+
+/* .selectin-arxa-rengi {
+    background: linear-gradient(to bottom, #0A101B, #0B1320);
+
+} */
+
+
+select {
+  border: none !important;
+  box-shadow: none !important;
+  border: 1px solid transparent !important;
+  outline: none !important;
+}
+
+select option {
+     border: none !important;
+  box-shadow: none !important;
+  border: 1px solid transparent !important;
+  outline: none !important;
+}
 @media (min-width: 768px) and (max-width:1279px) {
 
     header nav,
