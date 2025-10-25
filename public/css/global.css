@@ -34,42 +34,70 @@
 
 /* mobile menu start */
 .mobile-menu {
-    display: none;
     position: fixed;
-    background-color: #222;
+    display: flex;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .8);
     opacity: .9;
-    top: 80px;
-    width: 70%;
-    height: 50vh;
-}
-
-.mobile-menu .mobile-nav-links {
-    display: none;
-    flex-direction: column;
+    width: 0;
+    height: 100vh;
+    z-index: 99999;
+    overflow-x: hidden;
     justify-content: center;
-    height: 100%;
     align-items: center;
+    transition: 0.3s ease;
 }
+.mobile-menu.active{
+    width: 100%;
+}
+.mobile-menu .mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(30px);
+    align-items: center;
+    gap: 25px;
+    opacity: 0;
+}
+.mobile-menu.active .mobile-nav-links {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
 
 /* Group selectors w3schools.com */
-.mobile-menu .mobile-nav-links a {
-    color: #ccc;
-    text-decoration: none;
-    font-size: 17px;
+.mobile-nav-links a{
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 28px;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
-
-/* pseudo classlar */
-.mobile-nav-links a {
-    position: relative;
-    margin-bottom: 20px;
+.mobile-nav-links a:hover{
+    color: #00bcd4;
 }
-
 .mobile-menu .fa-xmark {
-    position: relative;
-    left: 240px;
-    top: -20px;
-}
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
 
+  .mobile-menu .fa-xmark:hover {
+    transform: rotate(90deg);
+    color: #00bcd4;
+  }
+  button.mobile-menu-button{
+    border: none;
+    border-radius: 5px;
+    background: #3A68B8;
+    width: 80px;
+    height: 50px;
+
+}
 /* mobile menu end */
 .container {
 
@@ -86,7 +114,7 @@ header {
     align-items: center;
     background: linear-gradient(to bottom, #0A101B, #0B1320);
     padding: 10px 10px;
-    z-index: 1;
+    z-index: 0;
     min-width: 100%;
 }
 
