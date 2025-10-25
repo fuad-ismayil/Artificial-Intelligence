@@ -48,46 +48,52 @@
     align-items: center;
     transition: 0.5s ease;
 }
-.mobile-menu.active{
+
+.mobile-menu.active {
     width: 100%;
 }
-.mobile-menu .mobile-nav-links {
+
+.mobile-nav-links {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
     opacity: 0;
 }
+
 .mobile-menu.active .mobile-nav-links {
     opacity: 1;
-  }
-  
+}
+
 
 /* Group selectors w3schools.com */
-.mobile-nav-links a{
-  color: #f0f0f0;
-  text-decoration: none;
-  font-size: 28px;
-  cursor: pointer;
-  transition: color 0.7s ease;
+.mobile-nav-links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 28px;
+    cursor: pointer;
+    transition: color 0.7s ease;
 }
-.mobile-nav-links a:hover{
+
+.mobile-nav-links a:hover {
     color: #00bcd4;
 }
-.mobile-menu .fa-xmark {
+
+.fa-xmark {
     position: absolute;
-    top: 15px;
+    top: 20px;
     right: 10px;
-    font-size: 32px;
+    font-size: 25px;
     cursor: pointer;
     transition: transform 0.3s ease, color 0.3s ease;
-  }
+}
 
-  .mobile-menu .fa-xmark:hover {
+.fa-xmark:hover {
     transform: rotate(90deg);
     color: #00bcd4;
-  }
-  button.mobile-menu-button{
+}
+
+.mobile-menu-button {
     border: none;
     border-radius: 5px;
     background: #3A68B8;
@@ -95,6 +101,7 @@
     height: 50px;
 
 }
+
 /* mobile menu end */
 .container {
 
@@ -131,47 +138,48 @@ header nav a {
 
 header img {
     width: 200px;
+    cursor: pointer;
 
 }
-.fa-bars{
-    font-size: 32px;
+
+.fa-bars {
+    font-size: 25px;
     cursor: pointer;
 }
 
 /* header end */
 
 /* introduction start */
-.introduction .intro-left h6 {
+.intro-left h6 {
     font-size: 15px;
     color: #3A68B8;
     padding: 10px 0;
 
 }
 
-.introduction .intro-left h1 {
+.intro-left h1 {
     font-size: 27px;
     color: #fff;
     padding: 10px 0;
 }
 
-.introduction .intro-left p {
+.intro-left p {
     color: #B4B7BB;
     padding: 10px 0;
 }
 
-section.introduction {
+.introduction {
     background: linear-gradient(to bottom, #08101D, #09111F);
     padding: 25px 15px;
     padding-top: 70px;
 }
 
-.introduction .intro-right img {
+.intro-right img {
     width: 100%;
     padding-top: 30px;
 }
 
-.intro-buttons .get-started,
-.watch-video {
+.get-started, .watch-video {
     border: none;
     border-radius: 5px;
     background: #3A68B8;
@@ -200,7 +208,7 @@ section.introduction {
 
 }
 
-.brends-logos>img {
+.brends-logos img {
     width: 50%;
 }
 
@@ -208,22 +216,22 @@ section.introduction {
 
 /* learn more start */
 
-section.learnmore {
+.learnmore {
     padding: 25px 15px;
     background: #020A18;
 }
 
-.learnmore .lm-left img {
+.lm-left img {
     width: 100%;
     padding: 30px 0;
 }
 
-.learnmore .lm-right p {
+.lm-right p {
     color: #B3B5B9;
     padding: 10px 0;
 }
 
-.learnmore .learn-more {
+.learn-more {
     border: none;
     border-radius: 5px;
     background: #3A68B8;
@@ -239,11 +247,12 @@ section.learnmore {
 
 /* Awards start */
 
-.awards{
+.awards {
     background: #020A18;
     padding: 25px 12px;
 }
-.a-cards{
+
+.a-cards {
     display: flex;
     flex-direction: column;
     background: linear-gradient(to bottom, #0C1421, #19202D);
@@ -254,14 +263,17 @@ section.learnmore {
     padding: 15px;
     margin: 15px;
 }
-.a-cards>article{
+
+.a-cards>article {
     font-size: 15px;
 }
-.a-cards>h4{
+
+.a-cards>h4 {
     font-size: 20px;
     padding-bottom: 15px;
 }
-.a-cards>img{
+
+.a-cards>img {
     width: 30%;
     margin: 25px 0;
 }
@@ -270,7 +282,7 @@ section.learnmore {
 
 /* Reviews start */
 
-section.reviews {
+.reviews {
     padding: 25px 15px;
     background: #020A18;
 }
@@ -294,46 +306,57 @@ section.reviews {
 
 /* Footer start */
 
-.footer{
+.footer {
     background: linear-gradient(to bottom, #060E1C, #09111F);
     padding: 50px 15px;
-    
+
 }
-.footer-nav{
+
+.footer-nav {
     gap: 15px;
 }
-.footer-nav-info{
-    margin-top: 45px;
-    gap:15px;
-}
-.footer-nav-about{
+
+.footer-nav-info {
     margin-top: 45px;
     gap: 15px;
 }
-.social-medias{
+
+.footer-nav-about {
+    margin-top: 45px;
+    gap: 15px;
+}
+
+.social-medias {
     display: flex;
     gap: 30px;
 }
-.lang-selector a{
+
+.lang-selector a {
     color: white;
 }
-.footer-nav a{
+
+.footer-nav a {
     text-decoration: none;
 }
-.footer-nav p{
+
+.footer-nav p {
     color: #9C9FA5;
 }
-.footer-nav-info a{
+
+.footer-nav-info a {
     text-decoration: none;
     color: #9C9FA5;
 }
-.footer-nav-about p{
+
+.footer-nav-about p {
     color: #9C9FA5;
 }
-.footer-nav-about a{
+
+.footer-nav-about a {
     text-decoration: none;
 }
-.social-medias a{
+
+.social-medias a {
     text-decoration: none;
     color: #9C9FA5;
 }
@@ -351,7 +374,7 @@ section.reviews {
         display: none;
     }
 
-    .mobile-menu .mobile-nav-links {
+    .mobile-nav-links {
         display: none;
     }
 
@@ -381,14 +404,13 @@ section.reviews {
         padding: 10px 50px;
     }
 
-    section.introduction {
+    .introduction {
         display: flex;
         align-items: center;
         padding: 80px 50px 30px;
     }
 
-    .intro-buttons .get-started,
-    .watch-video {
+    .get-started, .watch-video {
         width: 35%;
     }
 
@@ -413,7 +435,7 @@ section.reviews {
         width: 30%;
     }
 
-    section.learnmore {
+    .learnmore {
         display: flex;
         align-items: center;
         padding: 30px 50px;
@@ -422,7 +444,7 @@ section.reviews {
 
 
 
-    .learnmore .learn-more {
+    .learn-more {
         width: 35%;
     }
 
@@ -431,7 +453,7 @@ section.reviews {
     }
 
 
-    section.reviews {
+    .reviews {
         display: flex;
         align-items: center;
         padding: 30px 50px;
@@ -441,31 +463,40 @@ section.reviews {
     .rev-left>p {
         padding: 5px 0;
     }
-    .footer{
+
+    .footer {
         padding: 30px 50px;
     }
-    .footer img{
+
+    .footer img {
         width: 9rem;
     }
-    .footer-nav>p{
+
+    .footer-nav>p {
         font-size: 16px;
     }
-    .footer-nav a{
+
+    .footer-nav a {
         font-size: 16px;
     }
-    .footer-nav-info h4{
+
+    .footer-nav-info h4 {
         font-size: 18px;
     }
-    .footer-nav-info a{
+
+    .footer-nav-info a {
         font-size: 16px;
     }
-    .footer-nav-about h4{
+
+    .footer-nav-about h4 {
         font-size: 18px;
     }
-    .footer-nav-about a{
+
+    .footer-nav-about a {
         font-size: 16px;
     }
-    .footer-nav-about p{
+
+    .footer-nav-about p {
         font-size: 16;
     }
 }
@@ -481,7 +512,7 @@ section.reviews {
         display: none;
     }
 
-    .mobile-menu .mobile-nav-links {
+    .mobile-nav-links {
         display: none;
     }
 
@@ -511,25 +542,27 @@ section.reviews {
         padding: 10px 200px;
     }
 
-    section.introduction {
+    .introduction {
         display: flex;
         align-items: center;
         padding: 60px 200px;
         gap: 40px;
 
     }
-    .intro-left{
-        min-width: 50%;
-    }
-    .introduction .intro-left h1 {
-        font-size: 40px;
-    }
-    .intro-right{
+
+    .intro-left {
         min-width: 50%;
     }
 
-    .intro-buttons .get-started,
-    .watch-video {
+    .intro-left h1 {
+        font-size: 40px;
+    }
+
+    .intro-right {
+        min-width: 50%;
+    }
+
+    .get-started, .watch-video {
         width: 30%;
     }
 
@@ -552,7 +585,7 @@ section.reviews {
         width: 10%;
     }
 
-    section.learnmore {
+    .learnmore {
         display: flex;
         align-items: center;
         padding: 30px 200px;
@@ -560,22 +593,25 @@ section.reviews {
         gap: 70px;
     }
 
-    .learnmore .lm-left img {
+    .lm-left img {
         width: 100%;
         padding: 30px 0;
     }
 
-    .learnmore .lm-right p {
+    .lm-right p {
         color: #B3B5B9;
         padding: 10px 0;
     }
-    .lm-left{
+
+    .lm-left {
         min-width: 50%;
     }
-    .lm-right{
+
+    .lm-right {
         min-width: 50%;
     }
-    .learnmore .learn-more {
+
+    .learn-more {
         border: none;
         border-radius: 5px;
         background: #3A68B8;
@@ -588,14 +624,14 @@ section.reviews {
         font-size: 32px;
     }
 
-    section.reviews {
+    .reviews {
         display: flex;
         align-items: center;
         padding: 30px 200px;
         gap: 5px;
     }
 
-    .rev-left>h1{
+    .rev-left>h1 {
         font-size: 32px;
     }
 
@@ -603,38 +639,49 @@ section.reviews {
         padding: 5px 0;
         font-size: 13px;
     }
-    .rev-left{
+
+    .rev-left {
         min-width: 50%;
     }
-    .rev-right{
+
+    .rev-right {
         min-width: 50%;
     }
-    .footer{
+
+    .footer {
         padding: 50px 200px;
     }
-    .footer img{
+
+    .footer img {
         width: 9rem;
     }
-    .footer-nav>p{
+
+    .footer-nav>p {
         font-size: 14px;
     }
-    .footer-nav a{
+
+    .footer-nav a {
         font-size: 14px;
     }
-    .footer-nav-info h4{
-        
+
+    .footer-nav-info h4 {
+
         font-size: 16px;
     }
-    .footer-nav-info a{
+
+    .footer-nav-info a {
         font-size: 14px;
     }
-    .footer-nav-about h4{
+
+    .footer-nav-about h4 {
         font-size: 16px;
     }
-    .footer-nav-about a{
+
+    .footer-nav-about a {
         font-size: 14px;
     }
-    .footer .footer-nav-about p{
+
+    .footer-nav-about p {
         font-size: 14px;
     }
 
