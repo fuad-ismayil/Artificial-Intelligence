@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./public/css/global.css">
     <title>Artificial Intelligence</title>
 </head>
@@ -69,11 +70,13 @@
 
         <!-- Brend-logos start -->
         <section>
-            <div class="brends-logos">
-                <img src="./public/images/brends/1.svg" alt="Lorem Ipsum" />
-                <img src="./public/images/brends/2.svg" alt="Lorem Ipsum" />
-                <img src="./public/images/brends/3.svg" alt="Lorem Ipsum" />
-                <img src="./public/images/brends/4.svg" alt="Lorem Ipsum" />
+            <div class="swiper brends-logos border-none  py-3 px-3">
+                <div class="swiper-wrapper border-none">
+                    <div class="swiper-slide"><img src="./public/images/brends/1.svg" alt="Lorem Ipsum" /></div>
+                    <div class="swiper-slide"><img src="./public/images/brends/2.svg" alt="Lorem Ipsum" /></div>
+                    <div class="swiper-slide"><img src="./public/images/brends/3.svg" alt="Lorem Ipsum" /></div>
+                    <div class="swiper-slide"><img src="./public/images/brends/4.svg" alt="Lorem Ipsum" /></div>
+                </div>
             </div>
         </section>
         <!-- Brend-logos end -->
@@ -97,42 +100,11 @@
         <!-- LearnMore end -->
 
         <!-- Awards start -->
-        <section class="awards">
-            <div class="awards-cards">
-                <div class="row ">
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="a-cards">
-                            <img src="./public/images/awards/a1.svg" alt="ai awards" />
-                            <h4 class="open-sans-mid text-center">Naxly as the Winners in Global Agency Awards</h4>
-                            <article class="open-sans-thin text-center">Lorem ipsum is placeholder text commonly used in
-                                print, and publishing industries for previewing layouts and visual mockups.</article>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="a-cards">
-                            <img src="./public/images/awards/a2.svg" alt="ai awards" />
-                            <h4 class="open-sans-mid text-center">Expert Prespective Agency Awards</h4>
-                            <article class="open-sans-thin text-center">Lorem ipsum is placeholder text commonly used in
-                                print, and publishing industries for previewing layouts and visual mockups.</article>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="a-cards">
-                            <img src="./public/images/awards/a3.svg" alt="ai awards" />
-                            <h4 class="open-sans-mid text-center">Business Prespective Global Agency Awards</h4>
-                            <article class="open-sans-thin text-center">Lorem ipsum is placeholder text commonly used in
-                                print, and publishing industries for previewing layouts and visual mockups.</article>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="a-cards">
-                            <img src="./public/images/awards/a4.svg" alt="ai awards" />
-                            <h4 class="open-sans-mid text-center">Value for Results in Global Agency Awards</h4>
-                            <article class="open-sans-thin text-center">Lorem ipsum is placeholder text commonly used in
-                                print, and publishing industries for previewing layouts and visual mockups.</article>
-                        </div>
-                    </div>
-                </div>
+        <section class="swiper awards">
+            <div class="swiper-wrapper awards-in">
+
+
+
             </div>
         </section>
         <!-- Awards end -->
@@ -173,8 +145,8 @@
                                     class="fa-regular fa-envelope"></i> Company@gmail.com.com</a>
                             <a href="tel:#" class="text-white open-sans-xxthin"><i class="fa-solid fa-phone-volume"></i>
                                 Phone: (064) 332-1233</a>
-                            <a href="geo:#" class="text-white open-sans-xxthin"><i class="fa-solid fa-location-dot"></i>
-                                450 Wall Street, USA, New York</a>
+                            <a href="geo:Baku" class="text-white open-sans-xxthin"><i
+                                    class="fa-solid fa-location-dot"></i>450 Wall Street, USA, New York</a>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-2">
@@ -200,7 +172,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-2">
-                        <div class="footer-nav-info d-flex flex-column">
+                        <div class="footer-nav-info d-flex flex-column f-links">
                             <h4 class="text-white open-sans-xthin">USEFUL LINKS</h4>
                             <a href="#" class="open-sans-xxthin">Instagram profile</a>
                             <a href="#" class="open-sans-xxthin">New Collection</a>
@@ -211,7 +183,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3">
-                        <div class="footer-nav-about d-flex flex-column">
+                        <div class="footer-nav-about d-flex flex-column f-links">
                             <h4 class="text-white open-sans-xthin">ABOUT THE STORE</h4>
                             <p class="open-sans-xxthin">Lorem ipsum is placeholder text commonly used in the graphic,
                                 print, and layouts and visual mockups.</p>
@@ -234,8 +206,11 @@
         </section>
         <!-- Footer end -->
     </div>
+    <!-- AOS library implement -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
+    <!-- Swiper library implement -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- script.js implement -->
     <script src="./public/js/script.js"></script>
 </body>
 

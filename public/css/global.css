@@ -99,7 +99,10 @@
     background: #3A68B8;
     width: 80px;
     height: 50px;
-
+    transition: background 0.5s ease;
+}
+.mobile-menu-button:hover{
+    background: #7ca0dd;
 }
 
 /* mobile menu end */
@@ -118,13 +121,22 @@ header {
     align-items: center;
     background: linear-gradient(to bottom, #0A101B, #0B1320);
     padding: 10px 10px;
-    z-index: 0;
+    z-index: 1;
     min-width: 100%;
 }
 
 header nav,
 header button {
     display: none;
+    transition: background 0.5s ease;
+}
+
+header nav a:hover{
+    color: #3a4862;
+}
+
+header > button:hover{
+    background: #7ca0dd;
 }
 
 header nav {
@@ -134,6 +146,7 @@ header nav {
 header nav a {
     text-decoration: none;
     color: #fff;
+    transition: color 0.5s ease;
 }
 
 header img {
@@ -185,7 +198,12 @@ header img {
     background: #3A68B8;
     width: 45%;
     height: 50px;
+    transition: background 0.5s ease;
 
+}
+.get-started:hover, .watch-video:hover{
+    background: #7ca0dd;
+    color:#3a4862;
 }
 
 .intro-buttons {
@@ -199,18 +217,23 @@ header img {
 
 /* brends start */
 .brends-logos {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     background: #09111F;
-    padding: 20px;
-    gap: 40px;
+    /* padding: 20px;
+    gap: 40px; */
 
 }
+.brends-logos .swiper-slide {
+    display: flex;
+    justify-content: center; /* yatay ortalama */
+    align-items: center;     /* dikey ortalama */
+}
 
-.brends-logos img {
+/* .brends-logos img {
     width: 50%;
-}
+} */
 
 /* brends end */
 
@@ -237,6 +260,11 @@ header img {
     background: #3A68B8;
     width: 40%;
     height: 50px;
+    transition: background 0.5s ease;
+}
+
+.learn-more:hover{
+    background: #7ca0dd;
 }
 
 .lm-right h1 {
@@ -261,8 +289,11 @@ header img {
     align-items: center;
     height: 350px;
     padding: 15px;
-    margin: 15px;
+    margin: 0;
+
+
 }
+
 
 .a-cards>article {
     font-size: 15px;
@@ -273,10 +304,10 @@ header img {
     padding-bottom: 15px;
 }
 
-.a-cards>img {
+ .a-cards>img {
     width: 30%;
     margin: 25px 0;
-}
+} 
 
 /* Awards end */
 
@@ -419,7 +450,7 @@ header img {
         justify-content: flex-start;
 
     }
-
+/* 
     .brends-logos {
         display: flex;
         flex-direction: row;
@@ -428,12 +459,12 @@ header img {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-    }
+    } */
 
-    .brends-logos img {
+    /* .brends-logos img {
         padding: 7px;
         width: 30%;
-    }
+    } */
 
     .learnmore {
         display: flex;
@@ -499,6 +530,7 @@ header img {
     .footer-nav-about p {
         font-size: 16;
     }
+   
 }
 
 @media(min-width:1280px) {
@@ -540,6 +572,7 @@ header img {
     header {
         width: 100%;
         padding: 10px 200px;
+        z-index: 99999;
     }
 
     .introduction {
@@ -572,18 +605,18 @@ header img {
 
     }
 
-    .brends-logos {
+    /* .brends-logos {
         display: flex;
         flex-direction: row;
         gap: 70px;
         padding: 70px 25px;
         justify-content: center;
         align-items: center;
-    }
+    } */
 
-    .brends-logos img {
+    /* .brends-logos img {
         width: 10%;
-    }
+    } */
 
     .learnmore {
         display: flex;
