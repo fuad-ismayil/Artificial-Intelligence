@@ -72,11 +72,11 @@
     text-decoration: none;
     font-size: 28px;
     cursor: pointer;
-    transition: color 0.7s ease;
+    transition: color 0.5s ease;
 }
 
 .mobile-nav-links a:hover {
-    color: #00bcd4;
+    color: #3a4862;
 }
 
 .fa-xmark {
@@ -90,7 +90,7 @@
 
 .fa-xmark:hover {
     transform: rotate(90deg);
-    color: #00bcd4;
+    color: #3a4862 !important;
 }
 
 .mobile-menu-button {
@@ -103,6 +103,7 @@
 }
 .mobile-menu-button:hover{
     background: #7ca0dd;
+    color: #3a4862 !important;
 }
 
 /* mobile menu end */
@@ -159,6 +160,9 @@ header img {
     font-size: 25px;
     cursor: pointer;
 }
+.fa-bars:hover {
+    color: #3a4862!important;
+}
 
 /* header end */
 
@@ -203,7 +207,7 @@ header img {
 }
 .get-started:hover, .watch-video:hover{
     background: #7ca0dd;
-    color:#3a4862;
+    color:#3a4862 !important;
 }
 
 .intro-buttons {
@@ -265,6 +269,7 @@ header img {
 
 .learn-more:hover{
     background: #7ca0dd;
+    color: #3a4862 !important;
 }
 
 .lm-right h1 {
@@ -285,13 +290,16 @@ header img {
     flex-direction: column;
     background: linear-gradient(to bottom, #0C1421, #19202D);
     color: #B7BABE;
-    border-radius: 10PX;
+    border-radius: 10px;
     align-items: center;
     height: 350px;
     padding: 15px;
     margin: 0;
-
-
+    transform: scale(0.95)!important;
+    transition: transform 0.8s ease;
+}
+.a-cards:hover{
+    transform: scale(1)!important;
 }
 
 
@@ -368,6 +376,10 @@ header img {
 
 .footer-nav a {
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-nav a:hover{
+    color: #3a4862 !important;
 }
 
 .footer-nav p {
@@ -377,6 +389,10 @@ header img {
 .footer-nav-info a {
     text-decoration: none;
     color: #9C9FA5;
+    transition: background 0.3s ease;
+}
+.footer-nav-info a:hover{
+    color: #fff;
 }
 
 .footer-nav-about p {
@@ -385,11 +401,19 @@ header img {
 
 .footer-nav-about a {
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-nav-about > a:hover{
+    color: #3a4862 !important;
 }
 
 .social-medias a {
     text-decoration: none;
     color: #9C9FA5;
+    transition: color 0.3s ease;
+}
+.social-medias a:hover{
+    color: #fff;
 }
 
 /* Footer end */

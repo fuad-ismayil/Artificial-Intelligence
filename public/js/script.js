@@ -1,20 +1,19 @@
-AOS.init();
-const menuBtn = document.querySelector(".fa-bars")
-const mobileMenuDiv = document.querySelector(".mobile-menu")
-const closeBtn = document.querySelector(".fa-xmark")
-const awardsCards = document.querySelector(".awards-in")
+AOS.init(); // Initializing AOS library
+const menuBtn = document.querySelector(".fa-bars");
+const mobileMenuDiv = document.querySelector(".mobile-menu");
+const closeBtn = document.querySelector(".fa-xmark");
+const awardsCards = document.querySelector(".awards-in");
 
-menuBtn.addEventListener("click", openMenu)
-function openMenu() {
-    mobileMenuDiv.classList.add("active");
-}
+const openMenu = () => mobileMenuDiv.classList.add("active"); // arrow function for opening mobile menu
 
-var closeMenu = () => {
-    mobileMenuDiv.classList.remove("active");
-};
-closeBtn.addEventListener("click", closeMenu);
+menuBtn.addEventListener("click", openMenu); // event listener for triggering openMenu arrow function
 
 
+const closeMenu = () => mobileMenuDiv.classList.remove("active"); // arrow function for closing mobile menu
+
+closeBtn.addEventListener("click", closeMenu); // event listener for triggering closeMenu arrow function
+
+// IIFE async arrow function for inserting award cards using fetched JSON data
 (async () => {
     const awardsUrl = "./public/json/awards.json"
     const cavab = await fetch(awardsUrl)
@@ -27,6 +26,8 @@ closeBtn.addEventListener("click", closeMenu);
                 </div>`
     })
 })();
+
+// Setup responsive Swiper slider for brand logos
 const brendsSwiper = new Swiper(".brends-logos", {
     slidesPerView: 3,
     spaceBetween: 75,
@@ -38,25 +39,23 @@ const brendsSwiper = new Swiper(".brends-logos", {
     speed: 1000,
     breakpoints: {
         0: { slidesPerView: 1 },
-        600: { slidesPerView: 3 },
-        900: { slidesPerView: 3 },
-        1200: { slidesPerView: 3 },
-    },
+        768: { slidesPerView: 3 },
+        1200: { slidesPerView: 3 }
+    }
 });
 
+// Setup responsive Swiper slider for awards
 const awardsSwiper = new Swiper(".awards", {
     slidesPerView: 1,
-    spaceBetween: 50,
     loop: true,
-
     autoplay: {
         delay: 1700,
-        disableOnInteraction: false,
+        disableOnInteraction: false
     },
     speed: 1000,
     breakpoints: {
-        0: { slidesPerView: 1, centeredSlides: true },
-        768: { slidesPerView: 2, spaceBetween: 35 },
-        1200: { slidesPerView: 4 },
+        0: { slidesPerView: 1, spaceBetween: 25},
+        768: { slidesPerView: 2, spaceBetween: 35},
+        1200: { slidesPerView: 4, spaceBetween: 50}
     },
 });
