@@ -55,8 +55,8 @@ const awardsSwiper = new Swiper(".awards", {
     },
     speed: 1000,
     breakpoints: {
-        0: { slidesPerView: 1, centeredSlides: true },     // mobil
-        768: { slidesPerView: 2, spaceBetween: 35 },   // tablet
-        1200: { slidesPerView: 4 },  // desktop
+        0: { slidesPerView: 1, centeredSlides: true },
+        768: { slidesPerView: 2, spaceBetween: 35 },
+        1200: { slidesPerView: 4 },
     },
 });
