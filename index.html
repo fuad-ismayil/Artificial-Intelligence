@@ -17,9 +17,9 @@
 
 <body>
     <!-- Mobile menu start -->
-    <div class="mobile-menu ">
+    <div class="mobile-menu d-flex d-md-none">
         <i class="fa-solid fa-xmark text-white"></i>
-        <nav class="mobile-nav-links">
+        <nav class="mobile-nav-links d-flex flex-column align-items-center gap-4 ">
             <a href="#" class="open-sans-thin">Home</a>
             <a href="#" class="open-sans-thin">About</a>
             <a href="#" class="open-sans-thin">Services</a>
@@ -31,38 +31,49 @@
     <!-- Mobile menu end -->
     <div class="container">
         <!-- Header start -->
-        <header class="header">
+        <header class="header d-flex position-fixed align-items-center w-100 justify-content-between">
             <a href="#"><img src="./public/images/header/logo.svg" alt="Artificial Intelligence" /></a>
-            <i class="fa-solid fa-bars text-white"></i>
-            <nav class="nav-links">
+            <i class="fa-solid fa-bars text-white d-flex d-md-none"></i>
+            <nav class="nav-links d-none d-md-flex gap-4">
                 <a href="#" class="open-sans-thin">Home</a>
                 <a href="#" class="open-sans-thin">About</a>
                 <a href="#" class="open-sans-thin">Services</a>
                 <a href="#" class="open-sans-thin">Blog</a>
                 <a href="#" class="open-sans-thin">Contact</a>
             </nav>
-            <button class="open-sans-thin">Sign In</button>
+            <button
+                class="open-sans-thin d-none d-md-flex text-white w-10 border-0 align-items-center justify-content-center">Sign
+                In</button>
         </header>
         <!-- Header end -->
 
         <!-- Introduction start -->
         <section class="introduction">
-            <div data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="500">
-                <div class="intro-left">
-                    <h6 class="open-sans-thin">NEXT GENERATION PLATFORM</h6>
-                    <h1 class="open-sans-bold">Artifical Intelligence <br>& Cyber Security</h1>
-                    <p class="open-sans-thin">Lorem ipsum is placeholder text commonly used in the graphic, print, and
-                        publishing industries for previewing layouts and visual mockups.</p>
-                    <div class="intro-buttons">
-                        <button class="get-started open-sans-thin text-white">Get Started</button>
-                        <button class="watch-video open-sans-thin text-white"><i
-                                class="fa-solid fa-play text-white"></i>Watch Video</button>
+            <div class="row align-items-center">
+                <div class="col12 col-md-6">
+                    <div data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="500">
+                        <div class="intro-left">
+                            <h6 class="open-sans-thin">NEXT GENERATION PLATFORM</h6>
+                            <h1 class="open-sans-bold">Artifical Intelligence <br>& Cyber Security</h1>
+                            <p class="open-sans-thin">Lorem ipsum is placeholder text commonly used in the graphic,
+                                print,
+                                and
+                                publishing industries for previewing layouts and visual mockups.</p>
+                            <div class="intro-buttons d-flex gap-4">
+                                <button class="get-started open-sans-thin text-white border-0">Get Started</button>
+                                <button class="watch-video open-sans-thin text-white border-0"><i
+                                        class="fa-solid fa-play "></i>Watch Video</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="500">
-                <div class="intro-right">
-                    <img src="./public/images/intro/rocket.svg" alt="ai artifical intelligence suni intellekt" />
+                <div class="col12 col-md-6">
+                    <div data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="500">
+                        <div class="intro-right">
+                            <img src="./public/images/intro/rocket.svg"
+                                alt="ai artifical intelligence suni intellekt" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -70,12 +81,16 @@
 
         <!-- Brend-logos start -->
         <section>
-            <div class="swiper brends-logos border-none  py-3 px-3">
+            <div class="swiper brends-logos border-none  py-3 px-3 d-flex justify-content-center align-items-center">
                 <div class="swiper-wrapper border-none">
-                    <div class="swiper-slide"><img src="./public/images/brends/1.svg" alt="Lorem Ipsum" /></div>
-                    <div class="swiper-slide"><img src="./public/images/brends/2.svg" alt="Lorem Ipsum" /></div>
-                    <div class="swiper-slide"><img src="./public/images/brends/3.svg" alt="Lorem Ipsum" /></div>
-                    <div class="swiper-slide"><img src="./public/images/brends/4.svg" alt="Lorem Ipsum" /></div>
+                    <div class="swiper-slide d-flex justify-content-center"><img src="./public/images/brends/1.svg"
+                            alt="Lorem Ipsum" /></div>
+                    <div class="swiper-slide d-flex justify-content-center"><img src="./public/images/brends/2.svg"
+                            alt="Lorem Ipsum" /></div>
+                    <div class="swiper-slide d-flex justify-content-center"><img src="./public/images/brends/3.svg"
+                            alt="Lorem Ipsum" /></div>
+                    <div class="swiper-slide d-flex justify-content-center"><img src="./public/images/brends/4.svg"
+                            alt="Lorem Ipsum" /></div>
                 </div>
             </div>
         </section>
@@ -83,17 +98,27 @@
 
         <!-- LearnMore start -->
         <section class="learnmore">
-            <div data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="500">
-                <div class="lm-left">
-                    <img src="./public/images/learnmore/brain.svg" alt="learn more ai" />
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <div data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="500">
+                        <div class="lm-left">
+                            <img src="./public/images/learnmore/brain.svg" class="img-fluid" alt="learn more ai" />
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="500">
-                <div class="lm-right">
-                    <h1 class="open-sans-mid text-white">Apply AI, Deep Learning <br> and Data Science to solve</h1>
-                    <p class="open-sans-thin">Lorem ipsum is placeholder text commonly used in the graphic, print, and
-                        publishing industries for previewing layouts and visual mockups.</p>
-                    <button class="learn-more open-sans-thin text-white">Learn More</button>
+                <div class="col-12 col-md-6">
+                    <div data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="500">
+                        <div class="lm-right">
+                            <h1 class="open-sans-mid text-white fs-1">Apply AI, Deep Learning <br> and Data
+                                Science to solve
+                            </h1>
+                            <p class="open-sans-thin">Lorem ipsum is placeholder text commonly used in the graphic,
+                                print,
+                                and
+                                publishing industries for previewing layouts and visual mockups.</p>
+                            <button class="learn-more open-sans-thin text-white border-0 w-30">Learn More</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -111,21 +136,33 @@
 
         <!-- Reviews start -->
         <section class="reviews">
-            <div data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="500">
-                <div class="rev-left">
-                    <h1 class="open-sans-mid text-white">What our clients say about our awesome solutions</h1>
-                    <p class="open-sans-thin">To take a trivial example, which of us ever undertakes laborious physical
-                        exercise, except to obtain some advantage from it who do not know.</p>
-                    <p class="open-sans-thin">Lorem ipsum is placeholder text commonly used in the graphic, print, and
-                        publishing .</p>
-                    <p class="open-sans-thin">Lorem ipsum is placeholder previewing layouts and visual mockups.</p>
-                    <p class="open-sans-thin">Lorem ipsum is placeholder text commonly used in the graphic, print, and
-                        publishing industries for previewing layouts and visual mockups.</p>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <div data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="500">
+                        <div class="rev-left">
+                            <h1 class="open-sans-mid text-white fs-2">What our clients say about our awesome solutions</h1>
+                            <p class="open-sans-thin py-1 fs-6">To take a trivial example, which of us ever undertakes laborious
+                                physical
+                                exercise, except to obtain some advantage from it who do not know.</p>
+                            <p class="open-sans-thin py-1 fs-6">Lorem ipsum is placeholder text commonly used in the graphic,
+                                print,
+                                and
+                                publishing .</p>
+                            <p class="open-sans-thin py-1 fs-6">Lorem ipsum is placeholder previewing layouts and visual mockups.
+                            </p>
+                            <p class="open-sans-thin py-1 fs-6">Lorem ipsum is placeholder text commonly used in the graphic,
+                                print,
+                                and
+                                publishing industries for previewing layouts and visual mockups.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="500">
-                <div class="rev-right">
-                    <img src="./public/images/reviews/phone.svg" alt="ai reviews" />
+                <div class="col-12 col-md-6">
+                    <div data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="500">
+                        <div class="rev-right">
+                            <img src="./public/images/reviews/phone.svg" class="img-fluid" alt="ai reviews" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -136,21 +173,22 @@
             <footer class="footer">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-3">
-                        <div class="footer-nav d-flex flex-column">
+                        <div class="footer-nav d-flex flex-column gap-3">
                             <a href="#"><img src="./public/images/footer/f-logo.svg"
                                     alt="ai footer artifical intelligence" /></a>
-                            <p class="open-sans-xxthin">Lorem ipsum is placeholder text commonly used in the graphic,
+                            <p class="open-sans-xxthin fs-6">Lorem ipsum is placeholder text commonly used in the graphic,
                                 print, and layouts and visual mockups.</p>
-                            <a href="mailto:#" class="text-white open-sans-xxthin"><i
-                                    class="fa-regular fa-envelope"></i> Company@gmail.com.com</a>
-                            <a href="tel:#" class="text-white open-sans-xxthin"><i class="fa-solid fa-phone-volume"></i>
+                            <a href="mailto:#" class="text-white open-sans-xxthin fs-6"><i
+                                    class="fa-regular fa-envelope"></i>
+                                Company@gmail.com.com</a>
+                            <a href="tel:#" class="text-white open-sans-xxthin fs-6"><i class="fa-solid fa-phone-volume"></i>
                                 Phone: (064) 332-1233</a>
-                            <a href="geo:Baku" class="text-white open-sans-xxthin"><i
+                            <a href="geo:Baku" class="text-white open-sans-xxthin fs-6"><i
                                     class="fa-solid fa-location-dot"></i>450 Wall Street, USA, New York</a>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-2">
-                        <div class="footer-nav-info d-flex flex-column">
+                        <div class="footer-nav-info d-flex flex-column gap-3 mt-5">
                             <h4 class="text-white open-sans-xthin">INFORMATION</h4>
                             <a href="#" class="open-sans-xxthin">New Collection</a>
                             <a href="#" class="open-sans-xxthin">About Store</a>
@@ -161,7 +199,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-2">
-                        <div class="footer-nav-info d-flex flex-column">
+                        <div class="footer-nav-info d-flex flex-column gap-3 mt-5">
                             <h4 class="text-white open-sans-xthin">FOOTER MENU</h4>
                             <a href="#" class="open-sans-xxthin">Instagram profile</a>
                             <a href="#" class="open-sans-xxthin">New Collection</a>
@@ -172,7 +210,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-2">
-                        <div class="footer-nav-info d-flex flex-column f-links">
+                        <div class="footer-nav-info d-flex flex-column gap-3 mt-5">
                             <h4 class="text-white open-sans-xthin">USEFUL LINKS</h4>
                             <a href="#" class="open-sans-xxthin">Instagram profile</a>
                             <a href="#" class="open-sans-xxthin">New Collection</a>
@@ -183,12 +221,12 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3">
-                        <div class="footer-nav-about d-flex flex-column f-links">
+                        <div class="footer-nav-about d-flex flex-column gap-3 mt-5">
                             <h4 class="text-white open-sans-xthin">ABOUT THE STORE</h4>
                             <p class="open-sans-xxthin">Lorem ipsum is placeholder text commonly used in the graphic,
                                 print, and layouts and visual mockups.</p>
                             <a href="#" class="open-sans-xthin text-white">www.company.com</a>
-                            <div class="social-medias">
+                            <div class="social-medias d-flex gap-4">
                                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                                 <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
@@ -196,7 +234,7 @@
                                 <a href="#"><i class="fa-brands fa-youtube"></i></a>
                             </div>
                             <div class="lang-selector">
-                                <a href="#"><i class="fa-solid fa-globe"></i> English <i
+                                <a href="#" class="text-white text-decoration-none"><i class="fa-solid fa-globe"></i> English <i
                                         class="fa-solid fa-chevron-down"></i></a>
                             </div>
                         </div>

@@ -35,7 +35,7 @@
 /* mobile menu start */
 .mobile-menu {
     position: fixed;
-    display: flex;
+
     top: 0;
     right: 0;
     background-color: rgba(0, 0, 0, .8);
@@ -46,7 +46,7 @@
     overflow-x: hidden;
     justify-content: center;
     align-items: center;
-    transition: 0.5s ease;
+    transition: .5s ease;
 }
 
 .mobile-menu.active {
@@ -54,10 +54,6 @@
 }
 
 .mobile-nav-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
     opacity: 0;
 }
 
@@ -68,15 +64,17 @@
 
 /* Group selectors w3schools.com */
 .mobile-nav-links a {
-    color: #f0f0f0;
+    color: #989898;
     text-decoration: none;
     font-size: 28px;
     cursor: pointer;
-    transition: color 0.5s ease;
+    transition: .5s ease;
+    transform: scale(.9);
 }
 
 .mobile-nav-links a:hover {
-    color: #3a4862;
+    color: #fff;
+    transform: scale(1);
 }
 
 .fa-xmark {
@@ -85,7 +83,7 @@
     right: 10px;
     font-size: 25px;
     cursor: pointer;
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: .5s ease;
 }
 
 .fa-xmark:hover {
@@ -97,18 +95,20 @@
     border: none;
     border-radius: 5px;
     background: #3A68B8;
-    width: 80px;
+    width: 120px;
     height: 50px;
-    transition: background 0.5s ease;
+    transform: scale(.95) !important;
+    transition: .5s ease;
 }
-.mobile-menu-button:hover{
+
+.mobile-menu-button:hover {
     background: #7ca0dd;
     color: #3a4862 !important;
+    transform: scale(1) !important;
 }
 
 /* mobile menu end */
 .container {
-
     max-width: 100%;
     padding-left: 0;
     padding-right: 0;
@@ -116,38 +116,33 @@
 
 /* header start */
 header {
-    display: flex;
-    position: fixed;
-    justify-content: space-between;
-    align-items: center;
     background: linear-gradient(to bottom, #0A101B, #0B1320);
     padding: 10px 10px;
-    z-index: 1;
-    min-width: 100%;
+    z-index: 9999;
 }
 
 header nav,
 header button {
-    display: none;
-    transition: background 0.5s ease;
-}
-
-header nav a:hover{
-    color: #3a4862;
-}
-
-header > button:hover{
-    background: #7ca0dd;
-}
-
-header nav {
-    gap: 20px;
+    transition: .5s ease;
+    transform: scale(.95) !important;
 }
 
 header nav a {
     text-decoration: none;
     color: #fff;
-    transition: color 0.5s ease;
+    transition: .5s ease;
+    transform: scale(.95);
+}
+
+header nav a:hover {
+    color: #3a4862;
+    transform: scale(1) !important;
+}
+
+header>button:hover {
+    background: #7ca0dd;
+    color: #3a4862 !important;
+    transform: scale(1) !important;
 }
 
 header img {
@@ -159,9 +154,11 @@ header img {
 .fa-bars {
     font-size: 25px;
     cursor: pointer;
+    transition: .5s ease;
 }
+
 .fa-bars:hover {
-    color: #3a4862!important;
+    color: #3a4862 !important;
 }
 
 /* header end */
@@ -189,6 +186,7 @@ header img {
     background: linear-gradient(to bottom, #08101D, #09111F);
     padding: 25px 15px;
     padding-top: 70px;
+
 }
 
 .intro-right img {
@@ -196,48 +194,37 @@ header img {
     padding-top: 30px;
 }
 
-.get-started, .watch-video {
-    border: none;
+.get-started,
+.watch-video {
     border-radius: 5px;
     background: #3A68B8;
     width: 45%;
     height: 50px;
-    transition: background 0.5s ease;
-
+    transition: .5s ease;
+    transform: scale(.95);
 }
-.get-started:hover, .watch-video:hover{
+
+.get-started {
+    width: 35% !important;
+}
+
+.get-started:hover,
+.watch-video:hover {
     background: #7ca0dd;
-    color:#3a4862 !important;
+    color: #3a4862 !important;
+    transform: scale(1);
 }
 
-.intro-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
+
 
 
 /* introduction end */
 
 /* brends start */
+
 .brends-logos {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     background: #09111F;
-    /* padding: 20px;
-    gap: 40px; */
-
 }
-.brends-logos .swiper-slide {
-    display: flex;
-    justify-content: center; /* yatay ortalama */
-    align-items: center;     /* dikey ortalama */
-}
-
-/* .brends-logos img {
-    width: 50%;
-} */
 
 /* brends end */
 
@@ -249,7 +236,7 @@ header img {
 }
 
 .lm-left img {
-    width: 100%;
+
     padding: 30px 0;
 }
 
@@ -259,22 +246,21 @@ header img {
 }
 
 .learn-more {
-    border: none;
     border-radius: 5px;
     background: #3A68B8;
     width: 40%;
     height: 50px;
-    transition: background 0.5s ease;
+    transform: scale(.95);
+    transition: .5s ease;
 }
 
-.learn-more:hover{
+.learn-more:hover {
     background: #7ca0dd;
     color: #3a4862 !important;
+    transform: scale(1);
 }
 
-.lm-right h1 {
-    font-size: 24px;
-}
+
 
 /* learn more end */
 
@@ -286,22 +272,18 @@ header img {
 }
 
 .a-cards {
-    display: flex;
-    flex-direction: column;
     background: linear-gradient(to bottom, #0C1421, #19202D);
     color: #B7BABE;
     border-radius: 10px;
-    align-items: center;
     height: 350px;
     padding: 15px;
-    margin: 0;
-    transform: scale(0.95)!important;
-    transition: transform 0.8s ease;
-}
-.a-cards:hover{
-    transform: scale(1)!important;
+    transform: scale(.95) !important;
+    transition: transform .8s ease;
 }
 
+.a-cards:hover {
+    transform: scale(1) !important;
+}
 
 .a-cards>article {
     font-size: 15px;
@@ -312,10 +294,10 @@ header img {
     padding-bottom: 15px;
 }
 
- .a-cards>img {
+.a-cards>img {
     width: 30%;
     margin: 25px 0;
-} 
+}
 
 /* Awards end */
 
@@ -328,18 +310,7 @@ header img {
 
 .rev-left>p {
     color: #B3B5B9;
-
 }
-
-.rev-right>img {
-    width: 100%;
-    padding: 30px 0;
-}
-
-.rev-left>h1 {
-    padding: 20px 0;
-}
-
 
 /* Reviews end */
 
@@ -351,35 +322,15 @@ header img {
 
 }
 
-.footer-nav {
-    gap: 15px;
-}
-
-.footer-nav-info {
-    margin-top: 45px;
-    gap: 15px;
-}
-
-.footer-nav-about {
-    margin-top: 45px;
-    gap: 15px;
-}
-
-.social-medias {
-    display: flex;
-    gap: 30px;
-}
-
-.lang-selector a {
-    color: white;
-}
-
 .footer-nav a {
     text-decoration: none;
-    transition: color 0.3s ease;
+    transform: scale(.95);
+    transition: .5s ease;
 }
-.footer-nav a:hover{
+
+.footer-nav a:hover {
     color: #3a4862 !important;
+    transform: scale(1);
 }
 
 .footer-nav p {
@@ -389,10 +340,13 @@ header img {
 .footer-nav-info a {
     text-decoration: none;
     color: #9C9FA5;
-    transition: background 0.3s ease;
+    transform: scale(.95);
+    transition: .5s ease;
 }
-.footer-nav-info a:hover{
-    color: #fff;
+
+.footer-nav-info a:hover {
+    color: #fff !important;
+    transform: scale(1);
 }
 
 .footer-nav-about p {
@@ -401,41 +355,32 @@ header img {
 
 .footer-nav-about a {
     text-decoration: none;
-    transition: color 0.3s ease;
+    transform: scale(.95);
+    transition: .5s ease;
 }
-.footer-nav-about > a:hover{
+
+.footer-nav-about>a:hover {
     color: #3a4862 !important;
+    transform: scale(1);
 }
 
 .social-medias a {
     text-decoration: none;
     color: #9C9FA5;
-    transition: color 0.3s ease;
+    transform: scale(.95);
+    transition: .5s ease;
 }
-.social-medias a:hover{
+
+.social-medias a:hover {
     color: #fff;
+    transform: scale(1);
 }
 
 /* Footer end */
 
 @media (min-width: 768px) and (max-width:1279px) {
 
-    header nav,
-    header button {
-        display: flex;
-    }
 
-    .mobile-menu {
-        display: none;
-    }
-
-    .mobile-nav-links {
-        display: none;
-    }
-
-    header .fa-bars {
-        display: none;
-    }
 
     header img {
         width: 189px;
@@ -445,12 +390,8 @@ header img {
     header button {
         width: 15%;
         height: 52px;
-        color: #fff;
         background: #3A68B8;
-        border: none;
         border-radius: 5px;
-        align-items: center;
-        justify-content: center;
 
     }
 
@@ -465,8 +406,9 @@ header img {
         padding: 80px 50px 30px;
     }
 
-    .get-started, .watch-video {
-        width: 35%;
+    .get-started,
+    .watch-video {
+        width: 43% !important;
     }
 
     .intro-buttons {
@@ -474,51 +416,9 @@ header img {
         justify-content: flex-start;
 
     }
-/* 
-    .brends-logos {
-        display: flex;
-        flex-direction: row;
-        gap: 70px;
-        padding: 25px;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    } */
 
-    /* .brends-logos img {
-        padding: 7px;
-        width: 30%;
-    } */
-
-    .learnmore {
-        display: flex;
-        align-items: center;
-        padding: 30px 50px;
-        gap: 50px;
-    }
-
-
-
-    .learn-more {
-        width: 35%;
-    }
-
-    .lm-right h1 {
-        font-size: 30px;
-    }
-
-
-    .reviews {
-        display: flex;
-        align-items: center;
-        padding: 30px 50px;
-        gap: 50px;
-    }
-
-    .rev-left>p {
-        padding: 5px 0;
-    }
-
+    .learnmore,
+    .reviews,
     .footer {
         padding: 30px 50px;
     }
@@ -527,69 +427,26 @@ header img {
         width: 9rem;
     }
 
-    .footer-nav>p {
-        font-size: 16px;
-    }
-
-    .footer-nav a {
-        font-size: 16px;
-    }
-
-    .footer-nav-info h4 {
-        font-size: 18px;
-    }
-
-    .footer-nav-info a {
-        font-size: 16px;
-    }
-
+    .footer-nav-info h4,
     .footer-nav-about h4 {
         font-size: 18px;
     }
 
-    .footer-nav-about a {
+    .footer-nav-info a,
+    .footer-nav-about a,
+    .footer-nav-about p {
         font-size: 16px;
     }
 
-    .footer-nav-about p {
-        font-size: 16;
-    }
-   
 }
 
 @media(min-width:1280px) {
 
-    header nav,
-    header button {
-        display: flex;
-    }
-
-    .mobile-menu {
-        display: none;
-    }
-
-    .mobile-nav-links {
-        display: none;
-    }
-
-    header .fa-bars {
-        display: none;
-    }
-
-    header img {
-        width: 189px;
-        height: 38px;
-    }
-
     header button {
         width: 10%;
         height: 52px;
-        color: #fff;
         background: #3A68B8;
-        border: none;
         border-radius: 5px;
-        align-items: center;
-        justify-content: center;
 
     }
 
@@ -600,59 +457,31 @@ header img {
     }
 
     .introduction {
-        display: flex;
-        align-items: center;
-        padding: 60px 200px;
-        gap: 40px;
-
+        padding: 80px 200px;
     }
 
-    .intro-left {
-        min-width: 50%;
-    }
-
-    .intro-left h1 {
-        font-size: 40px;
+    /* .intro-left {
+        min-width: 45%;
     }
 
     .intro-right {
-        min-width: 50%;
+        min-width: 45%;
+    } */
+
+    .intro-left h1 {
+        font-size: 50px;
     }
 
-    .get-started, .watch-video {
+
+
+    .get-started,
+    .watch-video {
         width: 30%;
     }
 
-    .intro-buttons {
-        display: flex;
-        justify-content: flex-start;
-
-    }
-
-    /* .brends-logos {
-        display: flex;
-        flex-direction: row;
-        gap: 70px;
-        padding: 70px 25px;
-        justify-content: center;
-        align-items: center;
-    } */
-
-    /* .brends-logos img {
-        width: 10%;
-    } */
-
     .learnmore {
-        display: flex;
-        align-items: center;
         padding: 30px 200px;
         background: #020A18;
-        gap: 70px;
-    }
-
-    .lm-left img {
-        width: 100%;
-        padding: 30px 0;
     }
 
     .lm-right p {
@@ -660,50 +489,18 @@ header img {
         padding: 10px 0;
     }
 
-    .lm-left {
-        min-width: 50%;
-    }
-
-    .lm-right {
-        min-width: 50%;
-    }
-
     .learn-more {
-        border: none;
         border-radius: 5px;
         background: #3A68B8;
         width: 25%;
         height: 50px;
-
-    }
-
-    .lm-right h1 {
-        font-size: 32px;
     }
 
     .reviews {
-        display: flex;
-        align-items: center;
         padding: 30px 200px;
-        gap: 5px;
     }
 
-    .rev-left>h1 {
-        font-size: 32px;
-    }
-
-    .rev-left>p {
-        padding: 5px 0;
-        font-size: 13px;
-    }
-
-    .rev-left {
-        min-width: 50%;
-    }
-
-    .rev-right {
-        min-width: 50%;
-    }
+    /* footer start */
 
     .footer {
         padding: 50px 200px;
@@ -713,33 +510,18 @@ header img {
         width: 9rem;
     }
 
-    .footer-nav>p {
-        font-size: 14px;
-    }
-
-    .footer-nav a {
-        font-size: 14px;
-    }
-
-    .footer-nav-info h4 {
-
-        font-size: 16px;
-    }
-
-    .footer-nav-info a {
-        font-size: 14px;
-    }
-
+    .footer-nav-info h4,
     .footer-nav-about h4 {
+
         font-size: 16px;
     }
 
-    .footer-nav-about a {
-        font-size: 14px;
-    }
-
+    .footer-nav-info a,
+    .footer-nav-about a,
     .footer-nav-about p {
         font-size: 14px;
     }
+
+    /* footer end */
 
 }

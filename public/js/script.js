@@ -5,12 +5,9 @@ const closeBtn = document.querySelector(".fa-xmark");
 const awardsCards = document.querySelector(".awards-in");
 
 const openMenu = () => mobileMenuDiv.classList.add("active"); // arrow function for opening mobile menu
-
 menuBtn.addEventListener("click", openMenu); // event listener for triggering openMenu arrow function
 
-
 const closeMenu = () => mobileMenuDiv.classList.remove("active"); // arrow function for closing mobile menu
-
 closeBtn.addEventListener("click", closeMenu); // event listener for triggering closeMenu arrow function
 
 // IIFE async arrow function for inserting award cards using fetched JSON data
@@ -19,7 +16,7 @@ closeBtn.addEventListener("click", closeMenu); // event listener for triggering 
     const cavab = await fetch(awardsUrl)
     const awardsData = await cavab.json()
     awardsData.forEach(card => {
-        awardsCards.innerHTML += `<div class="a-cards swiper-slide">
+        awardsCards.innerHTML += `<div class="a-cards swiper-slide d-flex flex-column align-items-center ">
                     <img src="${card.img}" alt="ai awards" />
                     <h4 class="open-sans-mid text-center">${card.title}</h4>
                     <article>${card.despcription}</article>
@@ -54,8 +51,8 @@ const awardsSwiper = new Swiper(".awards", {
     },
     speed: 1000,
     breakpoints: {
-        0: { slidesPerView: 1, spaceBetween: 25},
-        768: { slidesPerView: 2, spaceBetween: 35},
-        1200: { slidesPerView: 4, spaceBetween: 50}
+        0: { slidesPerView: 1, spaceBetween: 25 },
+        768: { slidesPerView: 2, spaceBetween: 35 },
+        1200: { slidesPerView: 4, spaceBetween: 50 }
     },
 });
