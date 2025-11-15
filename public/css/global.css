@@ -147,8 +147,6 @@ header>button:hover {
 
 header img {
     width: 200px;
-    cursor: pointer;
-
 }
 
 .fa-bars {
@@ -459,14 +457,6 @@ header img {
     .introduction {
         padding: 80px 200px;
     }
-
-    /* .intro-left {
-        min-width: 45%;
-    }
-
-    .intro-right {
-        min-width: 45%;
-    } */
 
     .intro-left h1 {
         font-size: 50px;
