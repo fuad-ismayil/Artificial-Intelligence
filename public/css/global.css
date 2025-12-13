@@ -307,12 +307,21 @@ header img {
 /* Reviews end */
 
 /* FAQ start */
-.faq{
+.faqSection{
     background: #020A18;
     padding: 25px 15px;
 }
-.faq>h6{
+.faqSection>h6{
     color: #3A68B8;
+}
+.faqSection>.row{
+    gap: 25px;
+}
+.faq-accordion{
+    --bs-accordion-bg: #0f172a;
+    --bs-accordion-active-bg: #020617;
+
+
 }
 
 .el-collapse-item__header {
@@ -460,9 +469,12 @@ header img {
         font-size: 16px;
     }
 
-    .faq{
+    .faqSection{
         background: #020A18;
         padding: 25px 50px;
+    }
+    .faqSection>.row{
+        gap: 0px;
     }
 }
 
@@ -549,8 +561,11 @@ header img {
 
 
 
-    .faq{
+    .faqSection{
         background: #020A18;
         padding: 25px 200px;
+    }
+    .faqSection>.row{
+        gap: 0px;
     }
 }

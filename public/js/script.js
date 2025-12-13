@@ -68,12 +68,7 @@ const projectsSwiper = new Swiper(".projects-swiper", {
   },
 });
 
-new Vue({
-  el: ".faq",
-  data() {
-    return {leftActive: [],   // soldaki collapse başlangıçta kapalı
-        rightActive: []};
-  },
-});
+
+
 
 AOS.init(); // Initializing AOS libra75

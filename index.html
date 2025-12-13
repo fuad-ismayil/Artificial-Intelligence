@@ -24,10 +24,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"
-    />
     <link rel="stylesheet" href="./public/css/global.css" />
     <title>Artificial Intelligence</title>
   </head>
@@ -357,48 +353,174 @@
       <!-- Projects end -->
 
       <!-- FAQ start -->
-      <section class="faq">
-        <h6 class="open-sans-mid fs-4 text-center">FAQ</h6>
-        <h1 class="text-white text-center">Frequently Asked Questions</h1>
-        <div class="row accordions gap-5">
+      <section class="faqSection">
+        <h6 class="fs-4 open-sans-regular">FAQ</h6>
+        <h1 class="text-white open-sans-bold">Frequently Asked Questions</h1>
+        <div class="row">
           <div class="col-12 col-md-6">
-            <div class="accordion">
-              <el-collapse v-model="leftActive" accordion>
-                <el-collapse-item title="What is Artificial Intelligence?" name="1">
-                  <div>
-                    AI refers to machines or software that are designed to
-                    perform tasks that typically require human intelligence,
-                    such as learning, reasoning, and problem-solving.
+            <div class="faq-accordion accordion accordion-flush" id="leftFaq">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#left-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="left-collapseOne"
+                  >
+                  What is Artificial Intelligence?
+                  </button>
+                </h2>
+                <div
+                  id="left-collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#leftFaq"
+                >
+                  <div class="accordion-body text-white">
+                    AI refers to machines or software that are designed to perform tasks that typically require human intelligence, such as learning, reasoning, and problem-solving.
                   </div>
-                </el-collapse-item>
-                <el-collapse-item title="How does AI learn?" name="2">
-                  <div>AI systems learn by processing large amounts of data and identifying patterns using algorithms like machine learning or deep learning.</div>
-                </el-collapse-item>
-                <el-collapse-item title="What are the main types of AI?" name="3">
-                  <div>The primary types include Narrow AI (task-specific), General AI (human-level intelligence), and Superintelligent AI (beyond human capabilities).</div>
-                </el-collapse-item>
-                <el-collapse-item title="Is my data safe when using AI tools?" name="4">
-                  <div>Most modern AI platforms use encryption and strict security protocols, but data safety depends on the provider’s policies and how responsibly the user shares sensitive information.</div>
-                </el-collapse-item>
-              </el-collapse>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#left-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="left-collapseTwo"
+                  >How does AI learn?</button>
+                </h2>
+                <div
+                  id="left-collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="leftFaq"
+                >
+                  <div class="accordion-body text-white">AI systems learn by processing large amounts of data and identifying patterns using algorithms like machine learning or deep learning.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#left-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="left-collapseThree"
+                  >
+                  What are the main types of AI?
+                  </button>
+                </h2>
+                <div
+                  id="left-collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#leftFaq"
+                >
+                  <div class="accordion-body text-white">The primary types include Narrow AI (task-specific), General AI (human-level intelligence), and Superintelligent AI (beyond human capabilities).</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#left-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="left-collapseFour"
+                  >Is my data safe when using AI tools?</button>
+                </h2>
+                <div
+                  id="left-collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#leftFaq"
+                >
+                  <div class="accordion-body text-white">Most modern AI platforms use encryption and strict security protocols, but data safety depends on the provider’s policies and how responsibly the user shares sensitive information.</div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-12 col-md-6">
-            <div class="accordion">
-              <el-collapse v-model="rightActive" accordion>
-                <el-collapse-item title="Where is AI used today?" name="1">
-                  <div>AI is widely used in healthcare, finance, transportation, customer support, marketing, cybersecurity, and everyday applications like smartphones and smart home devices.</div>
-                </el-collapse-item>
-                <el-collapse-item title="Will AI replace human jobs?" name="2">
-                  <div>AI will automate some routine tasks, but it will also create new job opportunities. Human creativity, empathy, and strategic thinking remain essential.</div>
-                </el-collapse-item>
-                <el-collapse-item title="How accurate are AI-generated answers?" name="3">
-                  <div>AI responses are based on data and patterns, so accuracy is generally high, but they can still make mistakes. Verification is recommended for critical information.</div>
-                </el-collapse-item>
-                <el-collapse-item title="Do I need technical skills to use AI tools?" name="4">
-                  <div>Most AI tools are designed to be user-friendly and do not require technical background, though advanced usage may benefit from basic understanding of AI concepts.</div>
-                </el-collapse-item>
-              </el-collapse>
+            <div class="faq-accordion accordion accordion-flush" id="rightFaq">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#right-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="right-collapseOne"
+                  >Where is AI used today?</button>
+                </h2>
+                <div
+                  id="right-collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#rightFaq"
+                >
+                  <div class="accordion-body text-white">AI is widely used in healthcare, finance, transportation, customer support, marketing, cybersecurity, and everyday applications like smartphones and smart home devices.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#right-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="right-collapseTwo"
+                  >Will AI replace human jobs?</button>
+                </h2>
+                <div
+                  id="right-collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#tightFaq"
+                >
+                  <div class="accordion-body text-white">AI will automate some routine tasks, but it will also create new job opportunities. Human creativity, empathy, and strategic thinking remain essential.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#right-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="right-collapseThree"
+                  >How accurate are AI-generated answers?</button>
+                </h2>
+                <div
+                  id="right-collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#rightFaq"
+                >
+                  <div class="accordion-body text-white">AI responses are based on data and patterns, so accuracy is generally high, but they can still make mistakes. Verification is recommended for critical information.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#right-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="right-collapseFour"
+                  >Do I need technical skills to use AI tools?</button>
+                </h2>
+                <div
+                  id="right-collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#rightFaq"
+                >
+                  <div class="accordion-body text-white">Most AI tools are designed to be user-friendly and do not require technical background, though advanced usage may benefit from basic understanding of AI concepts.</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -546,8 +668,6 @@
       </div>
     </div>
 
-    <!-- Vue 2 implement -->
-    <script src="https://unpkg.com/vue@2/dist/vue.js"></script>
     <!-- BOOTSTRAP JS implement -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -557,8 +677,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Swiper library implement -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <!-- Element Plus JS implement -->
-    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
     <!-- script.js implement -->
     <script src="./public/js/script.js"></script>
   </body>
