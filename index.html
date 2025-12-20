@@ -45,6 +45,7 @@
     </div>
     <!-- Mobile menu end -->
     <div class="container">
+      
       <!-- Header start -->
       <header
         class="header d-flex position-fixed align-items-center w-100 justify-content-between"
@@ -92,8 +93,7 @@
                 </p>
                 <div class="intro-buttons d-flex gap-4">
                   <button
-                    class="get-started open-sans-regular text-white border-0"
-                  >
+                    class="get-started open-sans-regular text-white border-0" >
                     Get Started
                   </button>
                   <button
@@ -197,7 +197,7 @@
 
       <!-- Awards start -->
       <section class="swiper awards">
-        <div class="swiper-wrapper awards-in"></div>
+        <div class="swiper-wrapper awards-in"></div><div class="swiper-pagination"></div>
       </section>
       <!-- Awards end -->
 
@@ -264,22 +264,12 @@
             I bring results.<br />My clients are proof.
           </h1>
           <button
-            class="view-all border-0 rounded-2 text-white open-sans-extra-thin"
+            class="view-all border-0 rounded-2 rounded-md-1  text-white open-sans-extra-thin"
           >
             View all projects
           </button>
         </div>
         <div class="p-cards swiper-wrapper">
-          <div class="p-card d-flex flex-column gap-3 swiper-slide">
-            <img src="./public/images/projects/1.svg" alt="branding" />
-            <h6 class="open-sans-mid">Branding</h6>
-            <h5 class="text-white open-sans-mid">Soulful Rebrand</h5>
-            <a
-              href="#"
-              class="text-decoration-none text-light open-sans-extra-thin"
-              >View Project <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </div>
           <div class="p-card d-flex flex-column gap-3 swiper-slide">
             <img src="./public/images/projects/1.svg" alt="branding" />
             <h6 class="open-sans-mid">Branding</h6>
@@ -331,7 +321,17 @@
             ></a>
           </div>
           <div class="p-card d-flex flex-column gap-3 swiper-slide">
-            <img src="./public/images/projects/5.svg" alt="branding" />
+            <img src="./public/images/projects/2.svg" alt="branding" />
+            <h6 class="open-sans-mid">Branding</h6>
+            <h5 class="text-white open-sans-mid">Soulful Rebrand</h5>
+            <a
+              href="#"
+              class="text-decoration-none text-light open-sans-extra-thin"
+              >View Project <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="p-card d-flex flex-column gap-3 swiper-slide">
+            <img src="./public/images/projects/3.svg" alt="branding" />
             <h6 class="open-sans-mid">Branding</h6>
             <h5 class="text-white open-sans-mid">Soulful Rebrand</h5>
             <a
@@ -425,7 +425,7 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
-                    class="accordion-button collapsed text-white"
+                    class="accordion-button collapsed text-white border-0"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#left-collapseFour"
@@ -632,8 +632,7 @@
       <!-- Footer end -->
     </div>
 
-    <div
-      class="modal fade"
+    <div class="modal fade"
       id="watchVideo"
       tabindex="-1"
       aria-labelledby="videoTitle"
@@ -667,7 +666,7 @@
         </div>
       </div>
     </div>
-
+    
     <!-- BOOTSTRAP JS implement -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

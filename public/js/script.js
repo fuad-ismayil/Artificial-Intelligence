@@ -47,6 +47,10 @@ const awardsSwiper = new Swiper(".awards", {
     delay: 1700,
   },
   speed: 3000,
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
   breakpoints: {
     0: { slidesPerView: 1, spaceBetween: 25 },
     768: { slidesPerView: 2, spaceBetween: 35 },
